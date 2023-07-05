@@ -27,7 +27,7 @@ app.use('/', (req, res) => {
 const port = process.env.PORT || 5000;
 
 mongoose
-  .connect(`mongodb+srv://${process.env.CONNECTION_URL}`, {
+  .connect(`${process.env.CONNECTION_URL}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
